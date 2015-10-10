@@ -9,13 +9,13 @@
   <body>
     <header>
       <h1>ONE LOVE.. ONE LOVE</h1>
-      <h2>Guess da numba dat I got mon</h2>
+      <h2>Guess da numba dat I got mon (between 1 and 100)</h2>
     </header>
     <section>
         <p>
           <form>
             My Guess:<br>
-            <input type="text" name="myguess">
+            <input type="text" id="myguess">
           </form>
         </p>
         <div class="buttons">
@@ -23,18 +23,27 @@
           <button onclick= "grade()">This is my final answer.. for now</button>
           </p>
           <p>
-          <button onclick= "playsomemore()">I wanna keep playing</button>
+          <button onclick= "playsomemore()">I wanna play more and/or reset the game</button>
           </p>
           <p>
           <button onclick= "halp()" >Where am I?</button>
           </p>
         </div>
+          <p id="stage"></p>
+          <p id="stage2">
+          <script>
+          document.getElementById("stage2").innerHTML = "You have 10 guesses left";
+          </script>
+          <p id="stage3"></p>
+          <p id="stage4"></p>
     </section>
     <footer>
     </footer>
     <section>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>  
     </section>
+  <script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  </script>
   </body>  
 </html>
